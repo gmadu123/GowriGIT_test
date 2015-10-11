@@ -1,17 +1,18 @@
 <!DOCTYPE html>
+
 <html>
 
 <body>
-<table width='100%'>
+<table width='100%' style="">
    <tr>
      <td colspan="2"> <h3>Welcome to Java World</h3></td>
    </tr>
    <tr>
       <td>User Name</td>
-      <td><input type="text" name="userName" value="Name goes here " id="uname"/></td>
+      <td><input type="text" name="userName"  id="uname"/></td>
    </tr>
    <tr>
-      <td>User Name</td>
+      <td>Pasword</td>
       <td><input type="password" name="password" /></td>
    </tr>
    <tr>
@@ -25,10 +26,29 @@
 </body>
 <script type="text/javascript">
    function showMyName(obj){
+	   alert(obj);
 	   var nameLen = document.getElementById('uname').value.length;
 	   if(nameLen > 10){
 	   alert("Users name should not be more than 10 chars");
 	   }
+	   
    }
 </script>
+
+<style>
+table {
+    <!--border-collapse: collapse-->
+}
+
+table, td, th {
+    border: 2px solid black;
+   
+    
+}
+</style>
+
+
+
+
+
 </html>
